@@ -1,0 +1,137 @@
+05:00:40:517	18bc	Check and remove old log files...
+05:00:40:517	18bc	args: -mode 1 -allpools 0 -allcoins 0 -esm 0 -epool eth.gpumine.org:3333 -ewal 0x8c6ABfD7aF0297bB52c270f3071B82823282EF5c -eworker starfine001 -epsw x -dbg 0 -tstop 0 
+05:00:40:517	18bc	
+05:00:40:532	18bc	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+05:00:40:532	18bc	บ     Claymore's Dual ETH + DCR/SC/LBC/PASC GPU Miner v10.3      บ
+05:00:40:532	18bc	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+05:00:40:548	18bc	
+05:00:40:548	18bc	b435 
+05:00:40:767	18bc	ETH: 2 pools are specified
+05:00:40:767	18bc	Main Ethereum pool is eth.gpumine.org:3333
+05:00:41:407	18bc	OpenCL platform: Intel(R) OpenCL
+05:00:41:407	18bc	OpenCL platform: NVIDIA CUDA
+05:00:41:407	18bc	AMD OpenCL platform not found 
+05:00:41:970	18bc	CUDA initializing...
+
+05:00:41:970	18bc	NVIDIA Cards available: 3 
+05:00:41:986	18bc	CUDA Driver Version/Runtime Version: 9.1/8.0
+05:00:42:017	18bc	GPU #0: GeForce GTX 1070 Ti, 8192 MB available, 19 compute units, capability: 6.1  (pci bus 1:0:0)
+
+05:00:42:033	18bc	GPU #1: GeForce GTX 1070 Ti, 8192 MB available, 19 compute units, capability: 6.1  (pci bus 3:0:0)
+
+05:00:42:033	18bc	GPU #2: GeForce GTX 1070 Ti, 8192 MB available, 19 compute units, capability: 6.1  (pci bus 7:0:0)
+
+05:00:42:048	18bc	Total cards: 3 
+05:00:46:127	18bc	No AMD cards in the list, ADL library will not be used.
+05:00:46:127	18bc	NVML version: 9.388.71
+05:00:46:537	1194	ETH: Stratum - connecting to 'eth.gpumine.org' <104.199.226.144> port 3333
+05:00:46:568	1194	send: {"worker": "starfine001", "jsonrpc": "2.0", "params": ["0x8c6ABfD7aF0297bB52c270f3071B82823282EF5c", "x"], "id": 2, "method": "eth_submitLogin"}
+
+05:00:46:568	1194	ETH: Stratum - Connected (eth.gpumine.org:3333)
+05:00:46:615	1194	got 39 bytes
+05:00:46:615	1194	buf: {"jsonrpc":"2.0","result":true,"id":2}
+
+05:00:46:615	1194	parse packet: 38
+05:00:46:631	1194	ETH: Authorized
+05:00:46:631	1194	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+05:00:46:631	1194	new buf size: 0
+05:00:46:646	18bc	ETHEREUM-ONLY MINING MODE ENABLED (-mode 1)
+05:00:46:646	18bc	ETH: eth-proxy stratum mode
+05:00:46:662	1194	got 243 bytes
+05:00:46:662	18bc	Watchdog enabled
+05:00:46:678	18bc	Remote management (READ-ONLY MODE) is enabled on port 3333
+05:00:46:662	1194	buf: {"jsonrpc":"2.0","result":["0x67e74025f5047bb7f97a99aae5c5d5aba08aeeb25bb07d8f3a50b6e2328a3786","0xec6e8e0d8056cf9eb61046eaeb754b8e71f48e10a86c61f4d287b4ac5244653f","0x0000000112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"],"id":3}
+
+05:00:46:678	18bc	
+05:00:46:678	1194	parse packet: 242
+05:00:46:693	1194	ETH: job changed
+05:00:46:709	1194	new buf size: 0
+05:00:46:787	10e0	Setting DAG epoch #163...
+05:00:48:631	10e0	Setting DAG epoch #163 for GPU1
+05:00:48:631	f4c	Setting DAG epoch #163 for GPU0
+05:00:48:631	10fc	Setting DAG epoch #163 for GPU2
+05:00:48:647	10e0	Create GPU buffer for GPU1
+05:00:48:647	10fc	Create GPU buffer for GPU2
+05:00:48:647	f4c	Create GPU buffer for GPU0
+05:00:51:225	10e0	GPU 1, GpuMiner cu_kd failed 4 (1), unspecified launch failure
+05:00:51:225	10e0	GPU 1, Calc DAG failed!
+05:00:51:303	10fc	GPU 2, GpuMiner cu_kd failed 4 (12), unspecified launch failure
+05:00:51:303	10fc	GPU 2, Calc DAG failed!
+05:00:51:334	f4c	GPU 0, GpuMiner cu_kd failed 4 (12), unspecified launch failure
+05:00:51:334	f4c	GPU 0, Calc DAG failed!
+05:00:54:085	1194	got 240 bytes
+05:00:54:085	1194	buf: { "jsonrpc":"2.0", "result": ["0x64270ff2e3b73c0b373737f5147a576522c5c702887458cb5561c9bc0301875c","0xec6e8e0d8056cf9eb61046eaeb754b8e71f48e10a86c61f4d287b4ac5244653f","0x0000000112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"] }
+
+05:00:54:085	1194	parse packet: 235
+05:00:54:100	1194	ETH: job changed
+05:00:54:100	1194	new buf size: 0
+05:00:54:100	1194	ETH: 01/16/18-05:00:54 - New job from eth.gpumine.org:3333
+05:00:54:116	1194	target: 0x0000000112e0be82 (diff: 4000MH), epoch 163(2.27GB)
+05:00:54:116	1194	ETH - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+05:00:54:132	1194	ETH: GPU0 0.000 Mh/s, GPU1 0.000 Mh/s, GPU2 0.000 Mh/s
+05:00:54:757	10e0	Set global fail flag, failed GPU1
+05:00:54:757	10e0	GPU 1 failed
+05:00:54:757	1bc0	Setting DAG epoch #163 for GPU1
+05:00:54:772	1bc0	GPU 1, CUDA error 4 - cannot write buffer for DAG
+05:00:54:835	10fc	Set global fail flag, failed GPU2
+05:00:54:835	10fc	GPU 2 failed
+05:00:54:835	13fc	Setting DAG epoch #163 for GPU2
+05:00:54:850	13fc	GPU 2, CUDA error 4 - cannot write buffer for DAG
+05:00:54:850	f4c	Set global fail flag, failed GPU0
+05:00:54:866	f4c	GPU 0 failed
+05:00:54:882	1ef8	Setting DAG epoch #163 for GPU0
+05:00:54:882	1ef8	GPU 0, CUDA error 4 - cannot write buffer for DAG
+05:00:56:726	1194	ETH: checking pool connection...
+05:00:56:726	1194	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+05:00:56:757	1194	got 243 bytes
+05:00:56:757	1194	buf: {"jsonrpc":"2.0","result":["0x64270ff2e3b73c0b373737f5147a576522c5c702887458cb5561c9bc0301875c","0xec6e8e0d8056cf9eb61046eaeb754b8e71f48e10a86c61f4d287b4ac5244653f","0x0000000112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"],"id":3}
+
+05:00:56:757	1194	parse packet: 242
+05:00:56:772	1194	ETH: job is the same
+05:00:56:772	1194	new buf size: 0
+05:00:57:804	1bc0	Set global fail flag, failed GPU1
+05:00:57:804	1bc0	GPU 1 failed
+05:00:57:882	13fc	Set global fail flag, failed GPU2
+05:00:57:882	13fc	GPU 2 failed
+05:00:57:913	1ef8	Set global fail flag, failed GPU0
+05:00:57:913	1ef8	GPU 0 failed
+05:00:58:194	1194	got 240 bytes
+05:00:58:194	1194	buf: { "jsonrpc":"2.0", "result": ["0x0e2b843c65e645d86cedf4cb5d625dfc09e58898746b43540bd4c64ba5472a14","0xec6e8e0d8056cf9eb61046eaeb754b8e71f48e10a86c61f4d287b4ac5244653f","0x0000000112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"] }
+
+05:00:58:194	1194	parse packet: 235
+05:00:58:210	1194	ETH: job changed
+05:00:58:210	1194	new buf size: 0
+05:00:58:226	1194	ETH: 01/16/18-05:00:58 - New job from eth.gpumine.org:3333
+05:00:58:241	1194	target: 0x0000000112e0be82 (diff: 4000MH), epoch 163(2.27GB)
+05:00:58:241	1194	ETH - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+05:00:58:273	1194	ETH: GPU0 0.000 Mh/s, GPU1 0.000 Mh/s, GPU2 0.000 Mh/s
+05:01:06:727	1194	send: {"id":6,"worker":"starfine001","jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x0", "0x0000000000000000000000000000000000000000000000000000000020db8feb"]}
+
+05:01:06:758	1194	got 39 bytes
+05:01:06:758	1194	buf: {"jsonrpc":"2.0","result":true,"id":6}
+
+05:01:06:758	1194	parse packet: 38
+05:01:06:774	1194	new buf size: 0
+05:01:06:774	1194	ETH: checking pool connection...
+05:01:06:774	1194	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+05:01:06:805	1194	got 243 bytes
+05:01:06:805	1194	buf: {"jsonrpc":"2.0","result":["0x0e2b843c65e645d86cedf4cb5d625dfc09e58898746b43540bd4c64ba5472a14","0xec6e8e0d8056cf9eb61046eaeb754b8e71f48e10a86c61f4d287b4ac5244653f","0x0000000112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"],"id":3}
+
+05:01:06:805	1194	parse packet: 242
+05:01:06:820	1194	ETH: job is the same
+05:01:06:820	1194	new buf size: 0
+05:01:10:930	b3c	GPU0 t=32C fan=90%, GPU1 t=38C fan=94%, GPU2 t=27C fan=60%
+05:01:13:602	ab4	em hbt: 0, fm hbt: 0, 
+05:01:13:602	ab4	watchdog - thread 0 (gpu0), hb time 18703
+05:01:13:618	ab4	watchdog - thread 1 (gpu0), hb time 18719
+05:01:13:634	ab4	watchdog - thread 2 (gpu1), hb time 18735
+05:01:13:649	ab4	watchdog - thread 3 (gpu1), hb time 18750
+05:01:13:665	ab4	watchdog - thread 4 (gpu2), hb time 18766
+05:01:13:665	ab4	watchdog - thread 5 (gpu2), hb time 18766
+05:01:13:680	ab4	WATCHDOG: GPU error, you need to restart miner :( 
+05:01:14:946	ab4	Restarting OK, exit...
+
+

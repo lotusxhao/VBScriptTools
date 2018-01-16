@@ -1,0 +1,153 @@
+11:18:47:867	14a8	Check and remove old log files...
+11:18:47:867	14a8	args: -mode 1 -allpools 0 -allcoins 0 -esm 0 -epool eth.gpumine.org:3333 -ewal 0x8c6ABfD7aF0297bB52c270f3071B82823282EF5c -eworker starfine001 -epsw x -dbg 0 -tstop 0 
+11:18:47:882	14a8	
+11:18:47:898	14a8	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+11:18:47:898	14a8	บ     Claymore's Dual ETH + DCR/SC/LBC/PASC GPU Miner v10.3      บ
+11:18:47:898	14a8	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+11:18:47:914	14a8	
+11:18:47:914	14a8	b435 
+11:18:48:133	14a8	ETH: 2 pools are specified
+11:18:48:133	14a8	Main Ethereum pool is eth.gpumine.org:3333
+11:18:48:305	14a8	OpenCL platform: Intel(R) OpenCL
+11:18:48:305	14a8	OpenCL platform: NVIDIA CUDA
+11:18:48:305	14a8	AMD OpenCL platform not found 
+11:18:48:570	14a8	CUDA initializing...
+
+11:18:48:570	14a8	NVIDIA Cards available: 3 
+11:18:48:570	14a8	CUDA Driver Version/Runtime Version: 9.1/8.0
+11:18:48:602	14a8	GPU #0: GeForce GTX 1070 Ti, 8192 MB available, 19 compute units, capability: 6.1  (pci bus 1:0:0)
+
+11:18:48:602	14a8	GPU #1: GeForce GTX 1070 Ti, 8192 MB available, 19 compute units, capability: 6.1  (pci bus 3:0:0)
+
+11:18:48:617	14a8	GPU #2: GeForce GTX 1070 Ti, 8192 MB available, 19 compute units, capability: 6.1  (pci bus 7:0:0)
+
+11:18:48:617	14a8	Total cards: 3 
+11:18:52:695	14a8	No AMD cards in the list, ADL library will not be used.
+11:18:52:710	14a8	NVML version: 9.388.71
+11:18:53:154	1ff4	ETH: Stratum - connecting to 'eth.gpumine.org' <104.199.226.144> port 3333
+11:18:53:185	1ff4	send: {"worker": "starfine001", "jsonrpc": "2.0", "params": ["0x8c6ABfD7aF0297bB52c270f3071B82823282EF5c", "x"], "id": 2, "method": "eth_submitLogin"}
+
+11:18:53:185	1ff4	ETH: Stratum - Connected (eth.gpumine.org:3333)
+11:18:53:216	1ff4	got 39 bytes
+11:18:53:216	1ff4	buf: {"jsonrpc":"2.0","result":true,"id":2}
+
+11:18:53:216	1ff4	parse packet: 38
+11:18:53:216	1ff4	ETH: Authorized
+11:18:53:216	1ff4	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+11:18:53:232	1ff4	new buf size: 0
+11:18:53:247	1ff4	got 243 bytes
+11:18:53:247	1ff4	buf: {"jsonrpc":"2.0","result":["0x91791d3e2a857efe4bdd63f5cc582f1997e9ce3913b4ae91be07745df4996859","0xec6e8e0d8056cf9eb61046eaeb754b8e71f48e10a86c61f4d287b4ac5244653f","0x0000000112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"],"id":3}
+
+11:18:53:247	1ff4	parse packet: 242
+11:18:53:247	1ff4	ETH: job changed
+11:18:53:247	1ff4	new buf size: 0
+11:18:53:263	14a8	ETHEREUM-ONLY MINING MODE ENABLED (-mode 1)
+11:18:53:263	14a8	ETH: eth-proxy stratum mode
+11:18:53:263	14a8	Watchdog enabled
+11:18:53:263	14a8	Remote management (READ-ONLY MODE) is enabled on port 3333
+11:18:53:263	14a8	
+11:18:53:294	1ae4	Setting DAG epoch #163...
+11:18:55:123	1ae4	Setting DAG epoch #163 for GPU1
+11:18:55:123	146c	Setting DAG epoch #163 for GPU0
+11:18:55:123	1670	Setting DAG epoch #163 for GPU2
+11:18:55:138	1ae4	Create GPU buffer for GPU1
+11:18:55:138	146c	Create GPU buffer for GPU0
+11:18:55:138	1670	Create GPU buffer for GPU2
+11:18:57:029	1ff4	got 240 bytes
+11:18:57:029	1ff4	buf: { "jsonrpc":"2.0", "result": ["0x3f38c8922b5671d13aee092d4649292baad3bf9033243f22e31384c042262db2","0xec6e8e0d8056cf9eb61046eaeb754b8e71f48e10a86c61f4d287b4ac5244653f","0x0000000112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"] }
+
+11:18:57:045	1ff4	parse packet: 235
+11:18:57:060	1ff4	ETH: job changed
+11:18:57:060	1ff4	new buf size: 0
+11:18:57:060	1ff4	ETH: 01/15/18-11:18:57 - New job from eth.gpumine.org:3333
+11:18:57:076	1ff4	target: 0x0000000112e0be82 (diff: 4000MH), epoch 163(2.27GB)
+11:18:57:092	1ff4	ETH - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+11:18:57:092	1ff4	ETH: GPU0 0.000 Mh/s, GPU1 0.000 Mh/s, GPU2 0.000 Mh/s
+11:19:00:826	1ff4	got 240 bytes
+11:19:00:826	1ff4	buf: { "jsonrpc":"2.0", "result": ["0x7797ad4011d4af862b059583cf9fe9e1371f6fe4c5dd08b713a42b66e866b8e5","0xec6e8e0d8056cf9eb61046eaeb754b8e71f48e10a86c61f4d287b4ac5244653f","0x0000000112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"] }
+
+11:19:00:842	1ff4	parse packet: 235
+11:19:00:842	1ff4	ETH: job changed
+11:19:00:858	1ff4	new buf size: 0
+11:19:00:858	1ff4	ETH: 01/15/18-11:19:00 - New job from eth.gpumine.org:3333
+11:19:00:873	1ff4	target: 0x0000000112e0be82 (diff: 4000MH), epoch 163(2.27GB)
+11:19:00:873	1ff4	ETH - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+11:19:00:873	1ff4	ETH: GPU0 0.000 Mh/s, GPU1 0.000 Mh/s, GPU2 0.000 Mh/s
+11:19:01:467	146c	GPU0 DAG creation time - 6187 ms
+11:19:01:483	146c	Setting DAG epoch #163 for GPU0 done
+11:19:01:498	1670	GPU2 DAG creation time - 6211 ms
+11:19:01:514	1670	Setting DAG epoch #163 for GPU2 done
+11:19:01:576	1ae4	GPU1 DAG creation time - 6304 ms
+11:19:01:592	1ae4	Setting DAG epoch #163 for GPU1 done
+11:19:01:686	1ae4	GPU 1, GpuMiner cu_k1 failed 73, an illegal instruction was encountered
+11:19:01:686	1ae4	GPU 1, GpuMiner kx failed 1
+11:19:01:701	1ae4	Set global fail flag, failed GPU1
+11:19:01:717	1ae4	GPU 1 failed
+11:19:01:717	1f9c	GPU 2, GpuMiner cu_k1 failed 73, an illegal instruction was encountered
+11:19:01:733	1f9c	GPU 2, GpuMiner kx failed 1
+11:19:01:748	1f9c	Set global fail flag, failed GPU2
+11:19:01:748	1a80	GPU 0, GpuMiner cu_k1 failed 73, an illegal instruction was encountered
+11:19:01:748	1a80	GPU 0, GpuMiner kx failed 1
+11:19:01:764	1f9c	GPU 2 failed
+11:19:01:764	1670	GPU 2, GpuMiner cu_k1 failed 73, an illegal instruction was encountered
+11:19:01:764	1670	GPU 2, GpuMiner kx failed 1
+11:19:01:764	1a80	Set global fail flag, failed GPU0
+11:19:01:780	1a5c	GPU 1, GpuMiner cu_k1 failed 73, an illegal instruction was encountered
+11:19:01:780	1a5c	GPU 1, GpuMiner kx failed 1
+11:19:01:780	1a80	GPU 0 failed
+11:19:01:795	146c	GPU 0, GpuMiner cu_k1 failed 73, an illegal instruction was encountered
+11:19:01:795	146c	GPU 0, GpuMiner kx failed 1
+11:19:01:780	1a5c	Set global fail flag, failed GPU1
+11:19:01:795	1a5c	GPU 1 failed
+11:19:01:795	146c	Set global fail flag, failed GPU0
+11:19:01:811	146c	GPU 0 failed
+11:19:01:780	1670	Set global fail flag, failed GPU2
+11:19:01:811	1670	GPU 2 failed
+11:19:03:264	1ff4	ETH: checking pool connection...
+11:19:03:264	1ff4	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+11:19:03:311	1ff4	got 243 bytes
+11:19:03:311	1ff4	buf: {"jsonrpc":"2.0","result":["0x7797ad4011d4af862b059583cf9fe9e1371f6fe4c5dd08b713a42b66e866b8e5","0xec6e8e0d8056cf9eb61046eaeb754b8e71f48e10a86c61f4d287b4ac5244653f","0x0000000112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"],"id":3}
+
+11:19:03:327	1ff4	parse packet: 242
+11:19:03:342	1ff4	ETH: job is the same
+11:19:03:342	1ff4	new buf size: 0
+11:19:13:265	1ff4	send: {"id":6,"worker":"starfine001","jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x0", "0x00000000000000000000000000000000000000000000000000000000fb9adeb8"]}
+
+11:19:13:296	1ff4	got 39 bytes
+11:19:13:296	1ff4	buf: {"jsonrpc":"2.0","result":true,"id":6}
+
+11:19:13:312	1ff4	parse packet: 38
+11:19:13:328	1ff4	new buf size: 0
+11:19:13:328	1ff4	ETH: checking pool connection...
+11:19:13:328	1ff4	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+11:19:13:359	1ff4	got 243 bytes
+11:19:13:359	1ff4	buf: {"jsonrpc":"2.0","result":["0x7797ad4011d4af862b059583cf9fe9e1371f6fe4c5dd08b713a42b66e866b8e5","0xec6e8e0d8056cf9eb61046eaeb754b8e71f48e10a86c61f4d287b4ac5244653f","0x0000000112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"],"id":3}
+
+11:19:13:359	1ff4	parse packet: 242
+11:19:13:359	1ff4	ETH: job is the same
+11:19:13:375	1ff4	new buf size: 0
+11:19:15:000	1ff4	got 240 bytes
+11:19:15:000	1ff4	buf: { "jsonrpc":"2.0", "result": ["0x04badc2a09f65d7016e70a544cf480cfc51f63a592314050853551ed5f4452fe","0xec6e8e0d8056cf9eb61046eaeb754b8e71f48e10a86c61f4d287b4ac5244653f","0x0000000112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"] }
+
+11:19:15:015	1ff4	parse packet: 235
+11:19:15:031	1ff4	ETH: job changed
+11:19:15:031	1ff4	new buf size: 0
+11:19:15:031	1ff4	ETH: 01/15/18-11:19:15 - New job from eth.gpumine.org:3333
+11:19:15:031	1ff4	target: 0x0000000112e0be82 (diff: 4000MH), epoch 163(2.27GB)
+11:19:15:047	1ff4	ETH - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+11:19:15:047	1ff4	ETH: GPU0 0.000 Mh/s, GPU1 0.000 Mh/s, GPU2 0.000 Mh/s
+11:19:18:313	1444	GPU0 t=34C fan=90%, GPU1 t=38C fan=90%, GPU2 t=30C fan=60%
+11:19:20:954	145c	em hbt: 16, fm hbt: 110, 
+11:19:20:954	145c	watchdog - thread 0 (gpu0), hb time 19360
+11:19:20:969	145c	watchdog - thread 1 (gpu0), hb time 19328
+11:19:20:985	145c	watchdog - thread 2 (gpu1), hb time 19391
+11:19:20:985	145c	watchdog - thread 3 (gpu1), hb time 19391
+11:19:20:985	145c	watchdog - thread 4 (gpu2), hb time 19391
+11:19:20:985	145c	watchdog - thread 5 (gpu2), hb time 19312
+11:19:21:000	145c	WATCHDOG: GPU error, you need to restart miner :( 
+11:19:22:286	145c	Restarting OK, exit...
+
+
